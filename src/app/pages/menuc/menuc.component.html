@@ -1,0 +1,16 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-3 mt-3" *ngFor="let cd of cultureData; index as i">
+            <div class="carbox mt-3 mb-3">
+                <img src="{{cd.cultureImage}}">
+                <br><br>
+                <a class="bookbtn" [routerLink]="['/menuc', cd.id]">Book Now <i class="bi bi-geo-alt"></i></a>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

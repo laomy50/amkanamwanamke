@@ -1,0 +1,22 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+
+        <div class="col-lg-6" *ngIf="menuData">
+            <a routerLink="/menud" class="btn btn-md btn-sm btn-dark mb-3">Back</a>
+            <img src="{{menuData[0].decoImage}}" width="100%">
+        </div>
+
+        <div class="col-lg-6">
+            <h1 style="font-weight:bold;">Enter Your Details</h1>
+            <form>
+                <input type="text" class="form-control" placeholder="Enter decoration Name">
+                <input type="text" class="form-control" placeholder="Enter Your Full Name">
+                <input type="text" class="form-control" placeholder="Enter Your Mobile Phoone">
+                <input type="email" class="form-control" placeholder="Enter Your Email ">
+                <textarea class="form-control" placeholder="Enter your Address"></textarea>
+                <button class="btn btn-md btn-dark mt-3" type="submit">Place Booking</button>
+            </form>
+        </div>
+    </div>
+
+</div>
